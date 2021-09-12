@@ -20,6 +20,7 @@ namespace AspNetCore.Reporting
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         }
         private InternalLocalReport localReport = new InternalLocalReport();
+        localReport.EnableHyperlinks = true;
         /// <summary>
         /// absolute local report path.
         /// such as: rdl,rdlc
